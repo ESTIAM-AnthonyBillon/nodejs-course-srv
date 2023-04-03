@@ -1,0 +1,22 @@
+doctype html
+html
+   head
+      title Création compte utilisateur
+   body
+      form(action = "/students/create" method="POST")
+        fieldset
+            legend Inscription
+            p
+            label(for="name") Nom : 
+                input(type="text", name="name")
+            p
+            label(for="email") Adresse E-mail : 
+                input(type="text", name="email")
+                .tip.
+                Entrer une adresse e-mail valide comme <em>anthony.billon@estiam.com</em>
+            p 
+            label(for="password") Mot de passe : 
+                input(type="password", name="password")
+            p
+        p.buttons
+            input(type="submit", value="Envoyer")
